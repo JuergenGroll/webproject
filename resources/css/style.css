@@ -1,0 +1,384 @@
+/* Universal Styles */
+
+html {
+    font-family: Merriweather, Georgia, serif;
+    font-size: 16px;
+    color: black;
+    background-color: #889cc7;
+}
+
+body,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Merriweather Sans", Arial, sans-serif;
+    font-weight: 700;
+    color: #495879;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+a {
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+a,
+li {
+    display: inline-block;
+}
+
+article,
+div {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+}
+
+img,
+video {
+    width: 100%;
+    height: auto;
+}
+
+
+/*.img-box {
+    overflow: hidden; */
+
+
+}
+.img-box {
+    max-width: 60%;
+}
+
+/* Header */
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+    font-family: "Merriweather Sans", Arial, sans-serif;
+}
+header .container {
+    align-items: center;
+    padding: 0 1.5rem;
+}
+.logo {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+.logo span {
+    color: #e0e3ea;
+    font-weight: 500;
+}
+ul li a {
+    padding: 0 1rem;
+}
+ul li a:hover {
+    border-bottom: 4px solid #8dc527;
+    padding-bottom: 0.5rem;
+}
+ul li a:focus {
+    color: #8dc527;
+}
+nav ul li a:active {
+    background-color: #8dc527;
+    color: white;
+    padding: 0.5rem 0;
+}
+.mobile {
+    display: none;
+}
+
+/* Main-Content */
+main {
+    position: relative;
+    top: 4rem;
+}
+.teaser {
+    background-color: #e2e8d7;
+    display: flex;
+    justify-content: flex-start;
+}
+.teaser h3 {
+    color: #495879;
+}
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+/*.left {
+    width: 60%;*/
+
+}
+.right {
+    width: 40%;
+}
+a.cta-button {
+    font-family: "Merriwather Sans",
+    Arial,
+    sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 1rem;
+    color: white;
+    background-color: #8dc527;
+    max-width: 90%;
+}
+a.cta-button:hover {
+    background-color: #709c1f;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex p {
+    margin-bottom: 0.5rem;
+}
+.flex .text-box {
+    padding-right: 1rem;
+}
+.orientation {
+    color: white;
+}
+orientation h2,
+h3 {
+    color: white;
+}
+.image-2 h2 {
+    color: white;
+}
+cite {
+    display: block;
+    margin-top: 3rem;
+    font-family: "Meriweather Sans",
+    Arial,
+    sans-serif;
+    font-size: 0.75rem;
+}
+.image-2 {
+    width: 60%;
+    padding-right: 1.5rem;
+}
+article.flex:nth-child(2n+1) {
+    background-color: #495879;
+}
+article.flex:nth-child(2) {
+    background-color: #7a92c6;
+}
+.flex>.img-box {
+    padding: 1rem;
+}
+.img-box.right {
+    padding: 1rem;
+}
+.button {
+    background-color: #8dc527;
+    font-family: "Meriweather Sans",
+    Arial,
+    sans-serif;
+    margin-top: 0.5rem;
+    color: white;
+    width: 40%;
+    padding: 0.3rem;
+}
+a.button:hover {
+    background-color: #709c1f;
+}
+.courses {
+    background-color: #e0e3ea;
+}
+.courses h2 {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+.courses .container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.courses .element {
+    width: 25%;
+    margin: 0.5rem 1rem;
+}
+.courses .text-box {
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+.courses h3 {
+    color: #495879;
+}
+.thesis h2 {
+    padding-top: 1.5rem;
+    text-align: center;
+    color: white;
+}
+.picture-4 {
+    width: 60%;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    top: 4rem;
+    background-color: white;
+    font-family: "Meriweather Sans",
+    Arial,
+    sans-serif;
+    font-size: 0.75rem;
+}
+footer ul li a:hover {
+    border-bottom: 1px solid #8dc527;
+    padding-bottom: 0.5rem;
+}
+footer ul li a:focus {
+    color: black;
+}
+footer nav ul li a:active {
+    background-color: #8dc527;
+    color: white;
+    padding: 0.5rem 0;
+}
+@media only screen and (max-width: 980px) {
+    html {
+        font-size: 14px;
+    }
+    h2 {
+        line-height: 2rem;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    h3 {
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+    }
+    a.button {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 670px) {
+    html {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+        padding: 16px 0 16px 16px;
+        margin: 0 auto;
+    }
+    a.cta-button {
+        padding: 1rem 0;
+    }
+}
+@media only screen and (max-width: 540px) {
+    nav {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-around;
+    }
+    .desktop {
+        display: none;
+    }
+    .teaser {
+        flex-direction: column;
+    }
+    h2,
+    h3 {
+        text-align: center;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    a.cta-button {
+        width: 100%;
+        margin: 2.66rem auto;
+    }
+    h2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        margin: 32px 16px;
+    }
+    h3 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        /*margin-bottom: 24px;*/
+    }
+    .image-2 {
+        display: none;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    a.button {
+        margin: 0 16px 32px 16px;
+    }
+    .courses .container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .courses .container h4 {
+        display: none;
+    }
+    .courses .element {
+        width: 100%;
+    }
+    .courses {
+        background-color: white;
+    }
+    .courses .element {
+        background-color: #e0e3ea;
+    }
+    .courses .text-box {
+        padding: 0.5rem;
+    }
+    .picture-4 {
+        width: 100%;
+    }
+    footer p {
+        margin: 16px auto;
+    }
+    p {
+        line-height: 1.5rem;
+    }
+}
